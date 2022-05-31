@@ -58,7 +58,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 10px 0px;
+  padding: 20px 0px;
   border-radius: 5px;
   position: absolute;
   bottom: -25px;
@@ -130,3 +130,59 @@ body {
 .optionCounterButton:disabled {
   cursor: not-allowed;
 }
+
+.underline {
+  font-size: 30px;
+  color: white !important;
+  margin-left: 10px;
+}
+/* 
+<Navbar bg="none" text="white" expand="lg" variant="white">
+            <Container fluid>
+              <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+              <Navbar.Toggle aria-controls="navbarScroll" />
+              <Navbar.Collapse id="navbarScroll">
+                <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? activeClassName : undefined)}
+                    to="/"
+                    style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                  >
+                    Home
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? activeClassName : undefined)}
+                    to="/"
+                    style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                  >
+                    Home
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? activeClassName : undefined)}
+                    to="/"
+                    style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                  >
+                    Home
+                  </NavLink>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+
+ let activeStyle = {
+    textDecoration: "none",
+    color: "black",
+  };
+
+  let activeClassName = "underline";
+
+
+
+  import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { SearchContext } from "../../context/SearchContext";
+import { AuthContext } from "../../context/AuthContext";
+import styled from "styled-components";
+import styles from "./header.css";
+
+*/

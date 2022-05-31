@@ -17,7 +17,10 @@ const List = () => {
   const [min, setMin] = useState(undefined);
   const [max, setMax] = useState(undefined);
 
-  const { data, loading, error, reFetch } = useFetch(`/hotels?city=${destination}&min=${min || 0}&max=${max || 999}`);
+  const { data, loading, error, reFetch } = useFetch(destination ? `/hotels?city=${destination}&min=${min || 0}&max=${max || 999}` : `/hotels`);
+  /* 
+  (cat ? `http://localhost:5000/api/products?category=${cat}` : "http://localhost:5000/api/products");
+  */
 
   const handleClick = () => {
     reFetch();
@@ -76,7 +79,7 @@ const List = () => {
           </div>
           <div className="listResult">
             {loading ? (
-              "loading"
+              "waiting"
             ) : (
               <>
                 {data.map((item) => (

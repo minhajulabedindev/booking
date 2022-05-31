@@ -63,7 +63,7 @@ const Hotel = () => {
       <Navbar />
       <Header type="list" />
       {loading ? (
-        "loading"
+        "please wait"
       ) : (
         <div className="hotelContainer">
           {open && (

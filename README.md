@@ -4,13 +4,6 @@ Booking.com is a Dutch online travel agency for lodging reservations & other tra
 
 View Project: <a href="https://satyamall.github.io/Booking.com-in-React.js-cloned/">Click here</a>
 
-**Team Members:**
-
-- Satya Prakash Mall
-- Pradeep Mandal
-- Khushboo Atri
-- Harsh Mehta
-
 **Tech Stacks Used:**
 
 - React
